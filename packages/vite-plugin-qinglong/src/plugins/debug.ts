@@ -37,7 +37,10 @@ export default function (options: FinalOptions): Plugin {
 
       async function handleFileChange(file?: string) {
         if (file) {
-          logger.info(`File changed: ${normalizePath(path.relative(process.cwd(), file))}`, { timestamp: true })
+          logger.info(
+            `File changed: ${normalizePath(path.relative(process.cwd(), file))}`,
+            { timestamp: true },
+          )
         }
 
         const code = await buildScriptCode()
@@ -58,7 +61,10 @@ export default function (options: FinalOptions): Plugin {
 
           if (dependencies.length > 0) {
             await api.postDependencies(dependencies)
-            logger.info(`Installed dependencies: ${dependencies.map(dep => dep.name).join(', ')}`)
+            logger.info(
+              `Installed dependencies: ${dependencies.map(dep => dep.name).join(', ')}`,
+              { timestamp: true },
+            )
           }
         }
 

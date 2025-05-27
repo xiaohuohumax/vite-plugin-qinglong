@@ -1,7 +1,7 @@
 import type { Plugin } from 'vite'
 import type { FinalOptions, Options } from './types'
 import plugins from './plugins'
-import { getPackageDependencies } from './utils'
+import { readPackageDeps } from './utils'
 
 function normalizeOptions(options: Options): FinalOptions {
   const { version, minify, dependencies, enableAddPackageDeps, qlPanel } = options
@@ -24,7 +24,7 @@ export default async function (options: Options): Promise<Plugin[]> {
   const finalOptions: FinalOptions = normalizeOptions(options)
 
   if (finalOptions.enableAddPackageDeps) {
-    finalOptions.dependencies.push(...(await getPackageDependencies()))
+    finalOptions.dependencies.push(...(await readPackageDeps()))
   }
 
   return plugins.map(plugin => plugin(finalOptions))

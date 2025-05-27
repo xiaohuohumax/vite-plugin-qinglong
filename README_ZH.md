@@ -39,11 +39,23 @@ export default defineConfig({
 })
 ```
 
-3. 在 `src/index.ts` 中编写脚本代码
+3. 在 `tsconfig.json` 中配置 `types` 字段来引入 `QLAPI` 全局类型定义
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "vite-plugin-qinglong/global"
+    ]
+  }
+}
+```
+
+4. 在 `src/index.ts` 中编写脚本代码
 
 ```typescript
 console.log('Hello, world!')
 ```
 
-4. 运行 `npm run dev` 命令，访问 `http://localhost:5173` 即可调试脚本
-5. 运行 `npm run build` 命令即可打包脚本
+5. 运行 `npm run dev` 命令，访问 `http://localhost:5173` 即可调试脚本
+6. 运行 `npm run build` 命令即可打包脚本

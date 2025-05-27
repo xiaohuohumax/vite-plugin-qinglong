@@ -1,6 +1,6 @@
 import type { Plugin } from 'vite'
 import type { FinalOptions } from '../types'
-import { options2banner } from '../utils'
+import { finalOptions2banner } from '../utils'
 
 export default function (options: FinalOptions): Plugin {
   return {
@@ -11,7 +11,7 @@ export default function (options: FinalOptions): Plugin {
         if (output.type !== 'chunk' || !output.isEntry) {
           continue
         }
-        output.code = `${options2banner(options)}\n\n${output.code}`
+        output.code = `${finalOptions2banner(options)}\n\n${output.code}`
       }
     },
   }

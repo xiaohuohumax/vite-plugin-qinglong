@@ -39,11 +39,23 @@ export default defineConfig({
 })
 ```
 
-3. Write your script in `src/index.ts`
+3. Configure the `types` field in `tsconfig.json` to include the `QLAPI` global type definitions
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "vite-plugin-qinglong/global"
+    ]
+  }
+}
+```
+
+4. Write your script in `src/index.ts`
 
 ```typescript
 console.log('Hello, world!')
 ```
 
-4. Run `npm run dev` command and visit `http://localhost:5173` to debug your script.
-5. Run `npm run build` command to build your script.
+5. Run `npm run dev` command and visit `http://localhost:5173` to debug your script.
+6. Run `npm run build` command to build your script.

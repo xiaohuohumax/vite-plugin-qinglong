@@ -95,6 +95,7 @@
     "node_modules",
     ".vscode",
     "patches",
-    ".env*"
+    ".env*",
+    "pnpm-lock.yaml"
   ]
 }

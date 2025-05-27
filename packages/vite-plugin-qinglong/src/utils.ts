@@ -1,12 +1,12 @@
-import type { Options } from './types'
+import type { FinalOptions } from './types'
 
 import { readPackage } from 'read-pkg'
 
-export function options2banner(options: Options): string {
+export function finalOptions2banner(options: FinalOptions): string {
   const { name, version, description, author } = options
 
   const lines = [
-    `${name} v${version || '0.0.1'}${author ? ` Copyright (c) ${author}` : ''}`,
+    `${name} v${version}${author ? ` Copyright (c) ${author}` : ''}`,
     description ? description.split('\n') : null,
   ]
     .flat()
@@ -18,7 +18,7 @@ export function options2banner(options: Options): string {
   return `/**\n${lines}\n */`
 }
 
-export async function getPackageDependencies(): Promise<string[]> {
+export async function readPackageDeps(): Promise<string[]> {
   const pkg = await readPackage()
   return Object.entries(pkg.dependencies || {})
     .map(([name, version]) => `${name}@${version}`)
