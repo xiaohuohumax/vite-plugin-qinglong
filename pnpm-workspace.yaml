@@ -1,0 +1,9 @@
+packages:
+  - packages/**
+  - examples/**
+patchedDependencies:
+  http-proxy@1.18.1: patches/http-proxy@1.18.1.patch
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
+  - unrs-resolver

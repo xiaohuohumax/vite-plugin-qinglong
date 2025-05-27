@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugin-qinglong-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "build": "pnpm --filter=./packages/** build",
+    "build:watch": "pnpm --filter=./packages/** build --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postinstall": "simple-git-hooks",
+    "changeset": "changeset",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.13.2",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^22.15.21",
+    "eslint": "^9.27.0",
+    "simple-git-hooks": "^2.13.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint:fix && git add ."
+  }
+}

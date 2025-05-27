@@ -1,0 +1,21 @@
+{
+  "name": "vite-plugin-qinglong",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A vite plugin for qinglong",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "global.d.ts"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^3.0.5",
+    "read-pkg": "^9.0.1",
+    "vite": "^6.3.5"
+  }
+}

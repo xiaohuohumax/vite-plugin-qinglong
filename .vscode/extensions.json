@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "tobermory.es6-string-html",
+    "dbaeumer.vscode-eslint",
+    "redhat.vscode-yaml",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "irongeek.vscode-env"
+  ]
+}
