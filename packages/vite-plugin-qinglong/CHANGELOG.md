@@ -1,5 +1,11 @@
 # vite-plugin-qinglong
 
+## 0.0.3
+
+### Patch Changes
+
+- [`b5268dc`](https://github.com/xiaohuohumax/vite-plugin-qinglong/commit/b5268dc7e28a631c885bd857b66a94f7fda6594f) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - Update README and logger
+
 ## 0.0.2
 
 ### Patch Changes
