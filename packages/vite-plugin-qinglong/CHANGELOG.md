@@ -1,5 +1,11 @@
 # vite-plugin-qinglong
 
+## 0.0.2
+
+### Patch Changes
+
+- [`61bc42d`](https://github.com/xiaohuohumax/vite-plugin-qinglong/commit/61bc42dcc4bfad3cb3c757fb2ee50289183dac85) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - Update README
+
 ## 0.0.1
 
 ### Patch Changes
