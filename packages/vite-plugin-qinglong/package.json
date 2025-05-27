@@ -3,6 +3,20 @@
   "type": "module",
   "version": "0.0.1",
   "description": "A vite plugin for qinglong",
+  "author": {
+    "name": "xiaohuohumax",
+    "url": "https://github.com/xiaohuohumax"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuohumax/vite-plugin-qinglong.git"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "qinglong"
+  ],
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [

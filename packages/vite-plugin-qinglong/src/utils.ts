@@ -7,7 +7,6 @@ export function options2banner(options: Options): string {
 
   const lines = [
     `${name} v${version || '0.0.1'}${author ? ` Copyright (c) ${author}` : ''}`,
-    '',
     description ? description.split('\n') : null,
   ]
     .flat()
