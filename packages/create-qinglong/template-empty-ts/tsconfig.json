@@ -7,8 +7,13 @@
     ],
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "types": [
+      "vite/client",
+      "vite-plugin-qinglong/global"
+    ],
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src"]
 }

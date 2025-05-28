@@ -1,0 +1,43 @@
+{
+  "name": "create-qinglong",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A tool to create a Qinglong project with Vite",
+  "author": {
+    "name": "xiaohuohumax",
+    "url": "https://github.com/xiaohuohumax"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuohumax/vite-plugin-qinglong.git"
+  },
+  "keywords": [
+    "vite",
+    "qinglong",
+    "create"
+  ],
+  "bin": {
+    "create-qinglong": "index.mjs"
+  },
+  "files": [
+    "dist",
+    "index.mjs",
+    "template-*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "fs-extra": "^11.3.0",
+    "prompts": "^2.4.2",
+    "which-pm-runs": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "@types/which-pm-runs": "^1.0.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "vite-empty-starter",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "vite-plugin-qinglong": "^0.0.3"
+  }
+}
