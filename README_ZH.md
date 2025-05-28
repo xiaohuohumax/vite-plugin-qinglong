@@ -12,9 +12,9 @@
 ## 🚀 快速开始
 
 1. 创建项目
-  ```bash
-  npm create qinglong
-  ```
+   ```bash
+   npm create qinglong
+   ```
 
 2. 从青龙面板获取 `Client ID` 和 `Client Secret` 并填入 `vite.config.ts` 文件中，参考：[前置步骤](https://qinglong.online/api/preparation)
 3. 运行 `npm run dev` 命令，访问 `http://localhost:5173` 即可调试脚本
