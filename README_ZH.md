@@ -16,6 +16,6 @@
    npm create qinglong
    ```
 
-2. 从青龙面板获取 `Client ID` 和 `Client Secret` 并填入 `vite.config.ts` 文件中，参考：[前置步骤](https://qinglong.online/api/preparation)
+2. 从青龙面板获取 `Client ID` 和 `Client Secret` 并填入 `vite.config.ts` 文件中，参考：[创建应用](https://qinglong.online/api/preparation#%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8)
 3. 运行 `npm run dev` 命令，访问 `http://localhost:5173` 即可调试脚本
 4. 运行 `npm run build` 命令即可打包脚本

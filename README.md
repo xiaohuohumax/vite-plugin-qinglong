@@ -16,6 +16,6 @@
    npm create qinglong
    ```
 
-2. Get `Client ID` and `Client Secret` from Qinglong panel and fill them in `vite.config.ts` file, refer to: [Preparation](https://qinglong.online/api/preparation)
+2. Get `Client ID` and `Client Secret` from Qinglong panel and fill them in `vite.config.ts` file, refer to: [Create App](https://qinglong.online/en/api/preparation#create-app)
 3. Run `npm run dev` command and visit `http://localhost:5173` to debug your script.
 4. Run `npm run build` command to build your script.
