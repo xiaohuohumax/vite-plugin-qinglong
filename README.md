@@ -11,51 +11,11 @@
 
 ## 🚀 Quick Start
 
-1. Install dependencies
+1. Create project
+   ```bash
+   npm create qinglong
+   ```
 
-```bash
-npm install vite-plugin-qinglong -D
-```
-
-2. Add plugin to `vite.config.ts`
-
-```typescript
-import { defineConfig } from 'vite'
-import qinglong from 'vite-plugin-qinglong'
-
-export default defineConfig({
-  plugins: [
-    qinglong({
-      entry: 'src/index.ts',
-      name: 'Script name',
-      qlPanel: {
-        baseUrl: 'http://localhost:5700',
-        clientId: '',
-        clientSecret: '',
-      },
-      // other options...
-    }),
-  ],
-})
-```
-
-3. Configure the `types` field in `tsconfig.json` to include the `QLAPI` global type definitions
-
-```json
-{
-  "compilerOptions": {
-    "types": [
-      "vite-plugin-qinglong/global"
-    ]
-  }
-}
-```
-
-4. Write your script in `src/index.ts`
-
-```typescript
-console.log('Hello, world!')
-```
-
-5. Run `npm run dev` command and visit `http://localhost:5173` to debug your script.
-6. Run `npm run build` command to build your script.
+2. Get `Client ID` and `Client Secret` from Qinglong panel and fill them in `vite.config.ts` file, refer to: [Preparation](https://qinglong.online/api/preparation)
+3. Run `npm run dev` command and visit `http://localhost:5173` to debug your script.
+4. Run `npm run build` command to build your script.
