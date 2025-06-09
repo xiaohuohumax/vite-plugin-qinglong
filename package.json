@@ -3,8 +3,8 @@
   "private": true,
   "packageManager": "pnpm@10.6.5",
   "scripts": {
-    "build": "pnpm --filter=./packages/** build",
-    "build:watch": "pnpm --filter=./packages/** build --watch",
+    "build": "pnpm --filter=./packages/* build",
+    "build:watch": "pnpm --filter=./packages/* build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "simple-git-hooks",

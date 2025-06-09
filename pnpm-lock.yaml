@@ -72,24 +72,6 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
 
-  packages/create-qinglong/template-empty:
-    devDependencies:
-      vite:
-        specifier: ^6.3.5
-        version: 6.3.5(@types/node@22.15.21)(yaml@2.8.0)
-      vite-plugin-qinglong:
-        specifier: ^0.0.3
-        version: 0.0.3(@types/node@22.15.21)(yaml@2.8.0)
-
-  packages/create-qinglong/template-empty-ts:
-    devDependencies:
-      vite:
-        specifier: ^6.3.5
-        version: 6.3.5(@types/node@22.15.21)(yaml@2.8.0)
-      vite-plugin-qinglong:
-        specifier: ^0.0.3
-        version: 0.0.3(@types/node@22.15.21)(yaml@2.8.0)
-
   packages/vite-plugin-qinglong:
     dependencies:
       http-proxy-middleware:
@@ -2371,9 +2353,6 @@ packages:
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
-
-  vite-plugin-qinglong@0.0.3:
-    resolution: {integrity: sha512-7RvXCG/0jIpl1sXT6xO6OfqdQr7I69wGDekD/cjB1IKBzsAWVDIEMxa8J4QhXURpOttRX/tBsrdmGyEquYzQBw==}
 
   vite@6.3.5:
     resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
@@ -4950,25 +4929,6 @@ snapshots:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
-
-  vite-plugin-qinglong@0.0.3(@types/node@22.15.21)(yaml@2.8.0):
-    dependencies:
-      http-proxy-middleware: 3.0.5
-      read-pkg: 9.0.1
-      vite: 6.3.5(@types/node@22.15.21)(yaml@2.8.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - jiti
-      - less
-      - lightningcss
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - tsx
-      - yaml
 
   vite@6.3.5(@types/node@22.15.21)(yaml@2.8.0):
     dependencies:
