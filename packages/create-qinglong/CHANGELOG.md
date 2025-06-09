@@ -1,5 +1,11 @@
 # create-qinglong
 
+## 0.0.3
+
+### Patch Changes
+
+- [`cb6dee8`](https://github.com/xiaohuohumax/vite-plugin-qinglong/commit/cb6dee8fd69f19a51ad57be462cbb9a8802c7d95) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - Delete redundant files
+
 ## 0.0.2
 
 ### Patch Changes
